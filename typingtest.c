@@ -29,7 +29,7 @@ int main()
     int count = 0;
     load_words(all_word_list, &count);
     attron(COLOR_PAIR(4));
-    printw("Welcome PandaType\n\n");
+    printw("Welcome!!! This is a simple typing game made in C.\n\n");
     printw("Press Enter to start the game or Escape twice to exit\n");
     attroff(COLOR_PAIR(4));
     move(4, 0);
@@ -49,7 +49,7 @@ int main()
             {
                 clear();
                 attron(COLOR_PAIR(4));
-                printw("Welcome PandaType\n\n");
+                printw("Welcome!!!This is a simple typing game made in C.\n\n");
                 printw("Press Enter to start the game or Escape to exit\n");
                 attroff(COLOR_PAIR(4));
                 placement1 = 4;
@@ -384,7 +384,7 @@ int start_typing_test(char random_word_list[][WORD_MAX_LEN], int rand_word_count
     else
     {
         attron(COLOR_PAIR(4));
-        mvprintw(stat_line++, 0, "Thanks for playing PandaType !!!\n\n");
+        mvprintw(stat_line++, 0, "Thanks for playing!!!\n\n");
         attroff(COLOR_PAIR(4));
     }
 
@@ -451,7 +451,7 @@ int start_typing_test(char random_word_list[][WORD_MAX_LEN], int rand_word_count
                     attroff(COLOR_PAIR(4));
                 } else {
                     attron(COLOR_PAIR(4));
-                    mvprintw(stat_line++, 0, "Thanks for playing PandaType !!!\n\n");
+                    mvprintw(stat_line++, 0, "Thanks for playing!!!\n\n");
                     attroff(COLOR_PAIR(4));
                 }
                 stat_line++;
